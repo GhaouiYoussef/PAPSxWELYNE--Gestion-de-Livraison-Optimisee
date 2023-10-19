@@ -17,7 +17,7 @@ Si vous souhaitez exécuter cette application en local pour des tests ou des dé
 2. Clonez ce référentiel sur votre machine en utilisant la commande suivante :
 
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-projet.git
+   git clone https://github.com/GhaouiYoussef/PAPSxWELYNE--Gestion-de-Livraison-Optimisee/
    ```
 
 3. Accédez au répertoire de votre projet :
