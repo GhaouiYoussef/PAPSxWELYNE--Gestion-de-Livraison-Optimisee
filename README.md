@@ -23,37 +23,27 @@ Si vous souhaitez exécuter cette application en local pour des tests ou des dé
 3. Accédez au répertoire de votre projet :
 
    ```bash
-   cd votre-projet
+   cd 19-10-2023
    ```
 
-4. Créez un environnement virtuel pour isoler les dépendances de ce projet. Vous pouvez utiliser `virtualenv` :
 
-   ```bash
-   python -m venv venv
-   ```
-
-5. Activez l'environnement virtuel. Sur Windows, utilisez :
-
-   ```bash
-   venv\Scripts\activate
-   ```
-
-   Sur macOS et Linux, utilisez :
-
-   ```bash
-   source venv/bin/activate
-   ```
-
-6. Installez les dépendances requises à partir du fichier `requirements.txt` :
+4. Installez les dépendances requises à partir du fichier `requirements.txt` :
 
    ```bash
    pip install -r requirements.txt
    ```
 
-7. Maintenant, vous pouvez exécuter l'application en utilisant la commande suivante :
+
+5. Maintenant, vous pouvez exécuter l'application en utilisant la commande suivante :
 
    ```bash
    python api_flask_multiTask_mission.py
+   ```
+
+6. Si il y un problem dans l'execution(Puis reessayer 5. ) :
+
+   ```bash
+   pip install --upgrade Flask
    ```
 
    L'application devrait être accessible à l'adresse [http://localhost:5000](http://localhost:5000). Vous pouvez accéder à l'API à l'aide de cet URL.
