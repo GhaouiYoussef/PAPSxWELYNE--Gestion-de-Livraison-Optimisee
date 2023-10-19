@@ -1,0 +1,2232 @@
+[
+   {//mission1
+      "uid": "PP-MIS-MSG921261085",
+      "client": {
+         "client_company_name": "YSEP",
+         "client_phone_number": "+221772712193",
+         "client_contact_email": "assane.niang@paps-app.com",
+         "client_address": {
+            "address": "55 Bd de St Louis, Dakar, Senegal",
+            "country": "Senegal",
+            "city": "Fann-Point E-Amitié",
+            "region": "Dakar",
+            "__typename": "Address"
+         },
+         "__typename": "Client"
+      },
+      "address": null,
+      "axes": [
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         },
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         }
+      ],
+      "stops": [],
+      "status": "NOT_STARTED",
+      "type": "MSG",
+      "executionDate": "2023-09-30",
+      "slotStart": "11:00",
+      "slotEnd": "13:00",
+      "createdAt": "2023-09-29T18:16:18.923Z",
+      "additionnalInfos": null,
+      "vehicleType": "SCOOTER",
+      "productType": [],
+      "requestId": null,
+      "request": null,
+      "tasks": [
+         {
+            "_id": "65171473438d25002076905f",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "PICKUP",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-29T18:16:19.204Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJSaQIsMtywQ4RT7HH70mOHTg",
+                     "region": "Dakar",
+                     "address": "152 Rue DD 49, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "ganius",
+                           "reference": null,
+                           "parcelUid": "PP-O7259310-2835",
+                           "parcelId": "651714722ee6cc001cec6f53",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-29T18:16:19.207Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJBegeFFVWlQ4RZH5q8xIdHek",
+                     "region": "Saint-Louis Region",
+                     "address": "Saint Louis, Saint-Louis Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "ganius",
+                           "reference": null,
+                           "parcelUid": "PP-O7259310-2835",
+                           "parcelId": "651714722ee6cc001cec6f53",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         },
+         {
+            "_id": "65171473438d250020769060",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "DELIVERY",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-29T18:16:19.219Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJIfr6wJJywQ4R0fwBGeAPIv0",
+                     "region": "Dakar",
+                     "address": "55 Bd de St Louis, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "ganius",
+                           "reference": null,
+                           "parcelUid": "PP-O7259310-2835",
+                           "parcelId": "651714722ee6cc001cec6f53",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-29T18:16:19.222Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJSaQIsMtywQ4RT7HH70mOHTg",
+                     "region": "Dakar",
+                     "address": "152 Rue DD 49, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "ganius",
+                           "reference": null,
+                           "parcelUid": "PP-O7259310-2835",
+                           "parcelId": "651714722ee6cc001cec6f53",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         }
+      ],
+      "_id": "65171472438d250020769043",
+      "vehicles": [],
+      "__typename": "Mission"
+   },
+   {//mission2
+      "uid": "PP-MIS-MSG122134471",
+      "client": {
+         "client_company_name": "MGG BOUTIQUE",
+         "client_phone_number": "+221777908745",
+         "client_contact_email": "magueye@gmail.com",
+         "client_address": {
+            "address": "Patte d'oie hôtel villa, Dakar Region, Senegal",
+            "country": "Senegal",
+            "city": "Patte d'Oie",
+            "region": "Dakar Region",
+            "__typename": "Address"
+         },
+         "__typename": "Client"
+      },
+      "address": null,
+      "axes": [
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         },
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         }
+      ],
+      "stops": [],
+      "status": "NOT_STARTED",
+      "type": "MSG",
+      "executionDate": "2023-09-30",
+      "slotStart": "11:00",
+      "slotEnd": "13:00",
+      "createdAt": "2023-09-29T18:15:13.125Z",
+      "additionnalInfos": null,
+      "vehicleType": "SCOOTER",
+      "productType": [],
+      "requestId": null,
+      "request": null,
+      "tasks": [
+         {
+            "_id": "65171431438d250020769037",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "DELIVERY",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-29T18:15:13.397Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJN-qHyKoNwQ4RN-tKBB_nsm0",
+                     "region": "Dakar Region",
+                     "address": "Patte d'oie hôtel villa, Dakar Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "gggg",
+                           "reference": null,
+                           "parcelUid": "PP-O1629330-5965",
+                           "parcelId": "651714302ee6cc001cec6f30",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-29T18:15:13.400Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJSaQIsMtywQ4RT7HH70mOHTg",
+                     "region": "Dakar",
+                     "address": "152 Rue DD 49, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "gggg",
+                           "reference": null,
+                           "parcelUid": "PP-O1629330-5965",
+                           "parcelId": "651714302ee6cc001cec6f30",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         },
+         {
+            "_id": "65171431438d250020769040",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "PICKUP",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-29T18:15:13.541Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJSaQIsMtywQ4RT7HH70mOHTg",
+                     "region": "Dakar",
+                     "address": "152 Rue DD 49, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "gggg",
+                           "reference": null,
+                           "parcelUid": "PP-O1629330-5965",
+                           "parcelId": "651714302ee6cc001cec6f30",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-29T18:15:13.543Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJQ6yos6ZywQ4RCB-tZvP0GSg",
+                     "region": "Dakar Region",
+                     "address": "Mermoz Sacre-coeur, Dakar Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "gggg",
+                           "reference": null,
+                           "parcelUid": "PP-O1629330-5965",
+                           "parcelId": "651714302ee6cc001cec6f30",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         }
+      ],
+      "_id": "65171431438d250020769021",
+      "vehicles": [],
+      "__typename": "Mission"
+   },
+   {//mission3
+      "uid": "PP-MIS-MSG294478304",
+      "client": {
+         "client_company_name": "UBA",
+         "client_phone_number": "+221774566534",
+         "client_contact_email": "mohamed.diatta@paps-app.com",
+         "client_address": {
+            "address": "Dakar-Plateau, Dakar Region, Senegal",
+            "country": "Senegal",
+            "city": "Dakar-Plateau",
+            "region": "Dakar Region",
+            "__typename": "Address"
+         },
+         "__typename": "Client"
+      },
+      "address": null,
+      "axes": [
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         }
+      ],
+      "stops": [],
+      "status": "NOT_STARTED",
+      "type": "MSG",
+      "executionDate": "2023-09-23",
+      "slotStart": "08:00",
+      "slotEnd": "18:00",
+      "createdAt": "2023-09-21T11:16:03.296Z",
+      "additionnalInfos": null,
+      "vehicleType": null,
+      "productType": [],
+      "requestId": null,
+      "request": null,
+      "tasks": [
+         {
+            "_id": "650c25f3cdcc5a001fddea16",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "PICKUP",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-21T11:16:03.564Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJRxNFv8tywQ4RvIOCQTqkknQ",
+                     "region": "Dakar",
+                     "address": "152 Rue DD 49, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "disque externe",
+                           "reference": null,
+                           "parcelUid": "PP-O2917274-1054",
+                           "parcelId": "650c25f3338970001c201255",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-21T11:16:03.569Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJga_h9rCV6Q4RBnbC_2FnmSc",
+                     "region": "Kaolack Region",
+                     "address": "Kaolack, Kaolack Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "disque externe",
+                           "reference": null,
+                           "parcelUid": "PP-O2917274-1054",
+                           "parcelId": "650c25f3338970001c201255",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         }
+      ],
+      "_id": "650c25f3cdcc5a001fddea07",
+      "vehicles": [],
+      "__typename": "Mission"
+   },
+   {//mission4
+      "uid": "PP-MIS-MSG539865795",
+      "client": {
+         "client_company_name": "SENEGAL NUMERIK",
+         "client_phone_number": "+221775515626",
+         "client_contact_email": "khadim.gaye@adie.sn",
+         "client_address": {
+            "address": "Dakar-Plateau, Dakar Region, Senegal",
+            "country": "Senegal",
+            "city": "Dakar-Plateau",
+            "region": "Dakar Region",
+            "__typename": "Address"
+         },
+         "__typename": "Client"
+      },
+      "address": null,
+      "axes": [
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         }
+      ],
+      "stops": [],
+      "status": "NOT_STARTED",
+      "type": "MSG",
+      "executionDate": "2023-09-22",
+      "slotStart": "08:00",
+      "slotEnd": "18:00",
+      "createdAt": "2023-09-21T11:26:43.541Z",
+      "additionnalInfos": null,
+      "vehicleType": null,
+      "productType": [],
+      "requestId": null,
+      "request": null,
+      "tasks": [
+         {
+            "_id": "650c2873cdcc5a001fddea3c",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "PICKUP",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-21T11:26:43.796Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJRxNFv8tywQ4RvIOCQTqkknQ",
+                     "region": "Dakar",
+                     "address": "152 Rue DD 49, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "Frigo",
+                           "reference": null,
+                           "parcelUid": "PP-O6381471-1569",
+                           "parcelId": "650c2873338970001c201535",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-21T11:26:43.798Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJk5ANzohzwQ4R5Q7fHmf6rg8",
+                     "region": "Dakar",
+                     "address": "Diamniadio, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "Frigo",
+                           "reference": null,
+                           "parcelUid": "PP-O6381471-1569",
+                           "parcelId": "650c2873338970001c201535",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         }
+      ],
+      "_id": "650c2873cdcc5a001fddea2d",
+      "vehicles": [],
+      "__typename": "Mission"
+   },
+   {//mission5
+      "uid": "PP-MIS-MSG869864234",
+      "client": {
+         "client_company_name": "THIOUNEBOOM",
+         "client_phone_number": "+221767923882",
+         "client_contact_email": "juniorthioune@gmail.com",
+         "client_address": {
+            "address": "Ouakam, Dakar Region, Senegal",
+            "country": "Senegal",
+            "city": "Ouakam",
+            "region": "Dakar Region",
+            "__typename": "Address"
+         },
+         "__typename": "Client"
+      },
+      "address": null,
+      "axes": [
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         },
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         }
+      ],
+      "stops": [],
+      "status": "NOT_STARTED",
+      "type": "MSG",
+      "executionDate": "2023-09-22",
+      "slotStart": "15:00",
+      "slotEnd": "17:00",
+      "createdAt": "2023-09-22T15:00:17.891Z",
+      "additionnalInfos": null,
+      "vehicleType": "SCOOTER",
+      "productType": [],
+      "requestId": null,
+      "request": null,
+      "tasks": [
+         {
+            "_id": "650dac0259b5f2001f6b7eb0",
+            "type": "MSG",
+            "runsheetId": "650dac13338970001c204923",
+            "action": "DELIVERY",
+            "status": "ASSIGNED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-22T15:00:18.481Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJCzR8c1JtwQ4R7TtBPVlYcD8",
+                     "region": "Dakar Region",
+                     "address": "Ouakam, Dakar Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "Iphone 15 PRO",
+                           "reference": null,
+                           "parcelUid": "PP-O3969298-6671",
+                           "parcelId": "650dac00338970001c204910",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-22T15:00:18.483Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJSaQIsMtywQ4RT7HH70mOHTg",
+                     "region": "Dakar",
+                     "address": "152 Rue DD 49, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "Iphone 15 PRO",
+                           "reference": null,
+                           "parcelUid": "PP-O3969298-6671",
+                           "parcelId": "650dac00338970001c204910",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         },
+         {
+            "_id": "650dac0259b5f2001f6b7eaf",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "PICKUP",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-22T15:00:18.443Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJSaQIsMtywQ4RT7HH70mOHTg",
+                     "region": "Dakar",
+                     "address": "152 Rue DD 49, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "Iphone 15 PRO",
+                           "reference": null,
+                           "parcelUid": "PP-O3969298-6671",
+                           "parcelId": "650dac00338970001c204910",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-22T15:00:18.446Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJCzR8c1JtwQ4R7TtBPVlYcD8",
+                     "region": "Dakar Region",
+                     "address": "Ouakam, Dakar Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "Iphone 15 PRO",
+                           "reference": null,
+                           "parcelUid": "PP-O3969298-6671",
+                           "parcelId": "650dac00338970001c204910",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         }
+      ],
+      "_id": "650dac0159b5f2001f6b7e93",
+      "vehicles": [],
+      "__typename": "Mission"
+   },
+   {//mission6
+      "uid": "PP-MIS-MSG989121506",
+      "client": {
+         "client_company_name": "EDACY",
+         "client_phone_number": "+221778618313",
+         "client_contact_email": "ndiate@paps-app.com",
+         "client_address": {
+            "address": "Sacré Coeur 3 Vdn Extension rue MZ 26, Dakar, Senegal",
+            "country": "Senegal",
+            "city": "Sicap-Liberté",
+            "region": "Dakar",
+            "__typename": "Address"
+         },
+         "__typename": "Client"
+      },
+      "address": null,
+      "axes": [
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         },
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         }
+      ],
+      "stops": [],
+      "status": "NOT_STARTED",
+      "type": "MSG",
+      "executionDate": "2023-09-22",
+      "slotStart": "11:00",
+      "slotEnd": "13:00",
+      "createdAt": "2023-09-20T17:16:31.991Z",
+      "additionnalInfos": null,
+      "vehicleType": "MINI_VAN",
+      "productType": [],
+      "requestId": null,
+      "request": null,
+      "tasks": [
+         {
+            "_id": "650b28f0cdcc5a001fdde94b",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "DELIVERY",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-20T17:16:32.303Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJJ_uqdTq_wQ4RHyQO3BjYTCI",
+                     "region": "Thiès Region",
+                     "address": "Thies Senegal, Thiès Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "iphone",
+                           "reference": null,
+                           "parcelUid": "PP-O5745276-8507",
+                           "parcelId": "650b28ef338970001c200571",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-20T17:16:32.306Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJSaQIsMtywQ4RT7HH70mOHTg",
+                     "region": "Dakar",
+                     "address": "152 Rue DD 49, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "iphone",
+                           "reference": null,
+                           "parcelUid": "PP-O5745276-8507",
+                           "parcelId": "650b28ef338970001c200571",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         },
+         {
+            "_id": "650b28f0cdcc5a001fdde954",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "PICKUP",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-20T17:16:32.349Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJSaQIsMtywQ4RT7HH70mOHTg",
+                     "region": "Dakar",
+                     "address": "152 Rue DD 49, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "iphone",
+                           "reference": null,
+                           "parcelUid": "PP-O5745276-8507",
+                           "parcelId": "650b28ef338970001c200571",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-20T17:16:32.351Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJnXg3Mz8J6g4RFPRfHQP95tE",
+                     "region": "Diourbel Region",
+                     "address": "Bambey, Diourbel Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "iphone",
+                           "reference": null,
+                           "parcelUid": "PP-O5745276-8507",
+                           "parcelId": "650b28ef338970001c200571",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         }
+      ],
+      "_id": "650b28efcdcc5a001fdde935",
+      "vehicles": [],
+      "__typename": "Mission"
+   },
+   {//mission7
+      "uid": "PP-MIS-MSG30780498",
+      "client": {
+         "client_company_name": "ABDOU FALL",
+         "client_phone_number": "+221763426789",
+         "client_contact_email": "mansour@gmail.com",
+         "client_address": {
+            "address": "26 Av. Nelson Mandela, Région de Dakar, Senegal",
+            "country": "Senegal",
+            "city": "Dakar-Plateau",
+            "region": "Région de Dakar",
+            "__typename": "Address"
+         },
+         "__typename": "Client"
+      },
+      "address": null,
+      "axes": [
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         }
+      ],
+      "stops": [],
+      "status": "NOT_STARTED",
+      "type": "MSG",
+      "executionDate": "2023-09-22",
+      "slotStart": "08:00",
+      "slotEnd": "18:00",
+      "createdAt": "2023-09-21T09:46:24.032Z",
+      "additionnalInfos": null,
+      "vehicleType": null,
+      "productType": [],
+      "requestId": null,
+      "request": null,
+      "tasks": [
+         {
+            "_id": "650c10f0cdcc5a001fdde9f8",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "PICKUP",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-21T09:46:24.283Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJRxNFv8tywQ4RvIOCQTqkknQ",
+                     "region": "Dakar",
+                     "address": "152 Rue DD 49, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "laptop",
+                           "reference": null,
+                           "parcelUid": "PP-O7157245-0887",
+                           "parcelId": "650c10ef338970001c20097d",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-21T09:46:24.285Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJEQbL7mOKwQ4REdtAj5sNM7U",
+                     "region": "Thiès Region",
+                     "address": "Mbour, Thiès Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "laptop",
+                           "reference": null,
+                           "parcelUid": "PP-O7157245-0887",
+                           "parcelId": "650c10ef338970001c20097d",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         }
+      ],
+      "_id": "650c10f0cdcc5a001fdde9e9",
+      "vehicles": [],
+      "__typename": "Mission"
+   },
+   {//mission8
+      "uid": "PP-MIS-MSG259012804",
+      "client": {
+         "client_company_name": "HITECH SOY SARL",
+         "client_phone_number": "+221771720455",
+         "client_contact_email": "souaibou@paps-app.com",
+         "client_address": {
+            "address": "Mariste, Dakar, Senegal",
+            "country": "Senegal",
+            "city": "Hann Bel-Air",
+            "region": "Dakar",
+            "__typename": "Address"
+         },
+         "__typename": "Client"
+      },
+      "address": null,
+      "axes": [
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         }
+      ],
+      "stops": [],
+      "status": "NOT_STARTED",
+      "type": "MSG",
+      "executionDate": "2023-09-21",
+      "slotStart": "08:00",
+      "slotEnd": "18:00",
+      "createdAt": "2023-09-21T11:21:22.261Z",
+      "additionnalInfos": null,
+      "vehicleType": null,
+      "productType": [],
+      "requestId": null,
+      "request": null,
+      "tasks": [
+         {
+            "_id": "650c2732cdcc5a001fddea28",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "PICKUP",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-21T11:21:22.491Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJRxNFv8tywQ4RvIOCQTqkknQ",
+                     "region": "Dakar",
+                     "address": "152 Rue DD 49, Dakar, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "macbook pro",
+                           "reference": null,
+                           "parcelUid": "PP-O0290914-1797",
+                           "parcelId": "650c2732338970001c201468",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-21T11:21:22.492Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJOzHhdEMX6g4RMPMehxOKE-I",
+                     "region": "Diourbel Region",
+                     "address": "Diourbel, Diourbel Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "macbook pro",
+                           "reference": null,
+                           "parcelUid": "PP-O0290914-1797",
+                           "parcelId": "650c2732338970001c201468",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         }
+      ],
+      "_id": "650c2732cdcc5a001fddea19",
+      "vehicles": [],
+      "__typename": "Mission"
+   },
+   {//mission9
+      "uid": "PP-MIS75-20230920",
+      "client": {
+         "client_company_name": "GANIUS",
+         "client_phone_number": "+221783071757",
+         "client_contact_email": "diattamohamet30@gmail.com",
+         "client_address": {
+            "address": "55 Bd de St Louis, Dakar, Senegal",
+            "country": "Senegal",
+            "city": "Fann-Point E-Amitié",
+            "region": "Dakar",
+            "__typename": "Address"
+         },
+         "__typename": "Client"
+      },
+      "address": null,
+      "axes": [],
+      "stops": [
+         {
+            "refTemplateStop": null,
+            "createdAt": null,
+            "libelle": null,
+            "action": null,
+            "isDisabled": null,
+            "address": null,
+            "items": null,
+            "hub": null,
+            "hubId": null,
+            "__typename": "Stop"
+         },
+         {
+            "refTemplateStop": null,
+            "createdAt": null,
+            "libelle": null,
+            "action": null,
+            "isDisabled": null,
+            "address": null,
+            "items": null,
+            "hub": null,
+            "hubId": null,
+            "__typename": "Stop"
+         },
+         {
+            "refTemplateStop": null,
+            "createdAt": null,
+            "libelle": null,
+            "action": null,
+            "isDisabled": null,
+            "address": null,
+            "items": null,
+            "hub": null,
+            "hubId": null,
+            "__typename": "Stop"
+         },
+         {
+            "refTemplateStop": null,
+            "createdAt": null,
+            "libelle": null,
+            "action": null,
+            "isDisabled": null,
+            "address": null,
+            "items": null,
+            "hub": null,
+            "hubId": null,
+            "__typename": "Stop"
+         },
+         {
+            "refTemplateStop": null,
+            "createdAt": null,
+            "libelle": null,
+            "action": null,
+            "isDisabled": null,
+            "address": null,
+            "items": null,
+            "hub": null,
+            "hubId": null,
+            "__typename": "Stop"
+         }
+      ],
+      "status": "NOT_STARTED",
+      "type": "NT",
+      "executionDate": "2023-09-20",
+      "slotStart": null,
+      "slotEnd": null,
+      "createdAt": "2023-09-20T09:49:18.523Z",
+      "additionnalInfos": "DEMO DAY",
+      "vehicleType": null,
+      "productType": [
+         "FRAGILE",
+         "FOOD"
+      ],
+      "requestId": null,
+      "request": null,
+      "tasks": [
+         {
+            "_id": "650ac01ecdcc5a001fdde768",
+            "type": "NT",
+            "runsheetId": "650ac034e68d20001cba74db",
+            "action": null,
+            "status": "TO_BE_ASSIGNED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-20T09:49:18.438Z",
+                  "libelle": "NT",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJcbvFs_VywQ4RH7JdLdkXfLE",
+                     "region": "Dakar Region",
+                     "address": "Dakar, Dakar Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "velo",
+                           "reference": "#",
+                           "parcelUid": "PP-O0817245-0724",
+                           "parcelId": "650ac034e68d20001cba74d0",
+                           "value": 5,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 2,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-20T09:49:18.440Z",
+                  "libelle": "NT",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJv7Q3ypq_wQ4RawWjc0xvCFs",
+                     "region": "Thiès Region",
+                     "address": "Thies, Thiès Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "velo",
+                           "reference": "#",
+                           "parcelUid": "PP-O0817245-0724",
+                           "parcelId": "650ac034e68d20001cba74d0",
+                           "value": 5,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 2,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         },
+         {
+            "_id": "650ac01ecdcc5a001fdde769",
+            "type": "NT",
+            "runsheetId": "650ac034e68d20001cba74db",
+            "action": null,
+            "status": "TO_BE_ASSIGNED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-20T09:49:18.453Z",
+                  "libelle": "NT",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJcbvFs_VywQ4RH7JdLdkXfLE",
+                     "region": "Dakar Region",
+                     "address": "Dakar, Dakar Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "velo",
+                           "reference": "#",
+                           "parcelUid": "PP-O1206616-0642",
+                           "parcelId": "650ac034e68d20001cba74d3",
+                           "value": 5,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 2,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-20T09:49:18.456Z",
+                  "libelle": "NT",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJv7Q3ypq_wQ4RawWjc0xvCFs",
+                     "region": "Thiès Region",
+                     "address": "Thies, Thiès Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "hhh",
+                           "reference": "#",
+                           "parcelUid": "PP-O1206616-1910",
+                           "parcelId": "650ac034e68d20001cba74d5",
+                           "value": 100,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 2,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-20T09:49:18.459Z",
+                  "libelle": "NT",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJM9CsygJ26g4RmzZoFRiGDm8",
+                     "region": "Région de Diourbel",
+                     "address": "Gandal, Région de Diourbel, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "velo",
+                           "reference": "#",
+                           "parcelUid": "PP-O1206616-0642",
+                           "parcelId": "650ac034e68d20001cba74d3",
+                           "value": 5,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 2,
+                        "__typename": "Items"
+                     },
+                     {
+                        "product": {
+                           "name": "hhh",
+                           "reference": "#",
+                           "parcelUid": "PP-O1206616-1910",
+                           "parcelId": "650ac034e68d20001cba74d5",
+                           "value": 100,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 2,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         },
+         {
+            "_id": "650ac01ecdcc5a001fdde76a",
+            "type": "NT",
+            "runsheetId": "64da4888191484001c26cc22",
+            "action": null,
+            "status": "ASSIGNED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-20T09:49:18.483Z",
+                  "libelle": "NT",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJcbvFs_VywQ4RH7JdLdkXfLE",
+                     "region": "Dakar Region",
+                     "address": "Dakar, Dakar Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "velo",
+                           "reference": "#",
+                           "parcelUid": "PP-O4168292-2182",
+                           "parcelId": "650b2849338970001c2004e2",
+                           "value": 5,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-20T09:49:18.485Z",
+                  "libelle": "NT",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJga_h9rCV6Q4RBnbC_2FnmSc",
+                     "region": "Kaolack Region",
+                     "address": "Kaolack, Kaolack Region, Senegal",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "velo",
+                           "reference": "#",
+                           "parcelUid": "PP-O4168292-2182",
+                           "parcelId": "650b2849338970001c2004e2",
+                           "value": 5,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         }
+      ],
+      "_id": "650ac01ecdcc5a001fdde76b",
+      "vehicles": [
+         {
+            "vehicleType": "MINI_VAN",
+            "numberOfVehicule": 1,
+            "__typename": "Vehicles"
+         },
+         {
+            "vehicleType": "SCOOTER",
+            "numberOfVehicule": 1,
+            "__typename": "Vehicles"
+         }
+      ],
+      "__typename": "Mission"
+   },
+   {//mission10
+      "uid": "PP-MIS-MSG516548309",
+      "client": {
+         "client_company_name": "PAPOUZ",
+         "client_phone_number": "+221768010016",
+         "client_contact_email": "papaousmvne.ndiaye@gmail.com",
+         "client_address": {
+            "address": "55 Bd de St Louis, Dakar, Senegal",
+            "country": "Senegal",
+            "city": "Fann-Point E-Amitié",
+            "region": "Dakar",
+            "__typename": "Address"
+         },
+         "__typename": "Client"
+      },
+      "address": null,
+      "axes": [
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         },
+         {
+            "refTemplateAxe": null,
+            "name": null,
+            "type": null,
+            "stops": null,
+            "tasks": null,
+            "price": null,
+            "discount": null,
+            "vehicles": null,
+            "reccurenceType": null,
+            "slotStart": null,
+            "slotEnd": null,
+            "reccurenceOptions": null,
+            "__typename": "Axe"
+         }
+      ],
+      "stops": [],
+      "status": "NOT_STARTED",
+      "type": "MSG",
+      "executionDate": "2023-09-16",
+      "slotStart": "09:00",
+      "slotEnd": "11:00",
+      "createdAt": "2023-09-15T16:59:31.520Z",
+      "additionnalInfos": null,
+      "vehicleType": "SCOOTER",
+      "productType": [],
+      "requestId": null,
+      "request": null,
+      "tasks": [
+         {
+            "_id": "65048d73cdcc5a001fdde1b3",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "DELIVERY",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-15T16:59:31.819Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJ_-kvynLtwQ8RskjN5omhEcU",
+                     "region": "Abidjan Autonomous District",
+                     "address": "Cocody, Abidjan Autonomous District, Côte d'Ivoire",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "test",
+                           "reference": null,
+                           "parcelUid": "PP-O6307511-6064",
+                           "parcelId": "65048d73c2f07a001c6788fa",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-15T16:59:31.823Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "Eh1KIDc1LCBBYmlkamFuLCBDw7R0ZSBkJ0l2b2lyZSIuKiwKFAoSCQFDYh1c68EPEVb6Id6I68qoEhQKEgkhkZURU-rBDxGmIZLh3A3nPw",
+                     "region": "District Autonome d'Abidjan",
+                     "address": "J 75, District Autonome d'Abidjan, Côte d'Ivoire",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "test",
+                           "reference": null,
+                           "parcelUid": "PP-O6307511-6064",
+                           "parcelId": "65048d73c2f07a001c6788fa",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         },
+         {
+            "_id": "65048d73cdcc5a001fdde1b4",
+            "type": "MSG",
+            "runsheetId": null,
+            "action": "PICKUP",
+            "status": "NOT_STARTED",
+            "vehiculeType": null,
+            "uid": null,
+            "isReturn": false,
+            "executionDate": null,
+            "driverId": null,
+            "stops": [
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-15T16:59:31.863Z",
+                  "libelle": "MSG",
+                  "action": "PICKUP",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "Eh1KIDc1LCBBYmlkamFuLCBDw7R0ZSBkJ0l2b2lyZSIuKiwKFAoSCQFDYh1c68EPEVb6Id6I68qoEhQKEgkhkZURU-rBDxGmIZLh3A3nPw",
+                     "region": "District Autonome d'Abidjan",
+                     "address": "J 75, District Autonome d'Abidjan, Côte d'Ivoire",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "test",
+                           "reference": null,
+                           "parcelUid": "PP-O6307511-6064",
+                           "parcelId": "65048d73c2f07a001c6788fa",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": {
+                     "_id": "62348cb771e64300242fbef1",
+                     "name": "Derklé Warehouse",
+                     "location": {
+                        "country": "Senegal",
+                        "city": "Dieuppeul Derkle",
+                        "region": "Dakar Region",
+                        "address": "Dieuppeul Derkle, Dakar Region, Senegal",
+                        "additional_address": null,
+                        "location": {
+                           "latitude": 14.7249629,
+                           "longitude": -17.4514192,
+                           "__typename": "Location"
+                        },
+                        "place_id": "ChIJ37r9IMlywQ4RxB8r_dX9bMM",
+                        "__typename": "Address"
+                     },
+                     "__typename": "Hub"
+                  },
+                  "hubId": "62348cb771e64300242fbef1",
+                  "__typename": "Stop"
+               },
+               {
+                  "refTemplateStop": null,
+                  "createdAt": "2023-09-15T16:59:31.867Z",
+                  "libelle": "MSG",
+                  "action": "DELIVERY",
+                  "isDisabled": false,
+                  "address": {
+                     "place_id": "ChIJIZGVEVPqwQ8RpiGS4dwN5z8",
+                     "region": "Abidjan Autonomous District",
+                     "address": "Abidjan, Abidjan Autonomous District, Côte d'Ivoire",
+                     "__typename": "Address"
+                  },
+                  "items": [
+                     {
+                        "product": {
+                           "name": "test",
+                           "reference": null,
+                           "parcelUid": "PP-O6307511-6064",
+                           "parcelId": "65048d73c2f07a001c6788fa",
+                           "value": null,
+                           "__typename": "ProductTemplateStop"
+                        },
+                        "counter": 1,
+                        "__typename": "Items"
+                     }
+                  ],
+                  "hub": null,
+                  "hubId": null,
+                  "__typename": "Stop"
+               }
+            ],
+            "activities": null,
+            "__typename": "TaskMission"
+         }
+      ],
+      "_id": "65048d73cdcc5a001fdde197",
+      "vehicles": [],
+      "__typename": "Mission"
+   }
+]
