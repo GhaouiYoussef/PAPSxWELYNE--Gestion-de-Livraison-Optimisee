@@ -5,8 +5,9 @@ Ce projet est dédié à la gestion optimisée de la livraison de marchandises e
 ## Description des Fichiers
 
 - `Final_algorithm.py` contient la fonction principale qui génère les itinéraires de livraison optimisés.
-- `Delivery_op_GM_distance_based.py` contient les fonctions utilisées pour les calculs d'optimisation.
-- `api_flask_multiTask_mission.py` est un fichier essentiel pour l'API de l'application.
+- `Main_functions.py` contient les fonctions secondaires utilisées pour les calculs d'optimisation et autres .
+- `TSP_modified.py` contient les fonctions primaires utilisées pour les calculs d'optimisation.
+- `API_Call.py` est un fichier essentiel pour l'API de l'application.
 
 ## Exécution en Local
 
