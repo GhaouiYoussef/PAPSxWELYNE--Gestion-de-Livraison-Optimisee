@@ -83,6 +83,18 @@ def generate_google_maps_link(locations):
     
     return full_url
 
+def combine_consecutive_occurrences(lst):
+    combined_occurrences = []
+    current_element = lst[0]
 
+    for i in range(1, len(lst)):
+        if lst[i] == current_element:
+            continue
+        else:
+            combined_occurrences.append(current_element)
+            current_element = lst[i]
+
+    combined_occurrences.append(current_element)
+    return combined_occurrences
 
 

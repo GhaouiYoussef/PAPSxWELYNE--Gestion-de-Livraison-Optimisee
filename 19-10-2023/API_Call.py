@@ -11,12 +11,14 @@ CORS(app)  # Enable CORS for all routes
 def optimize():
     # Get the JSON data from the frontend request
     data_missions = request.get_json()
-    print(f'data_missions: {data_missions[1]} \n')
+    # print(f'data_missions: {data_missions[1]} \n')
     mission_tasks = []
+    mission_id=[]
     for data in data_missions:
-        mission_id = data['uid']
+        
 
         for task in data['tasks']:
+            mission_id=data['uid']
             task_id = task['_id']
             task_action = task['action']
             
@@ -35,6 +37,7 @@ def optimize():
 
             
             mission_tasks.append({
+                'uid': mission_id,
                 'Task ID': task_id,
                 'Task Action': task_action,
                 'Pickup Address': pickup_stop['address']['address'],
@@ -44,27 +47,27 @@ def optimize():
             })
 
     # Extracting client information from Mission 1
-    client_info_mission = {
-        'Client Company Name': data['client']['client_company_name'],
-        'Client Phone Number': data['client']['client_phone_number'],
-        'Client Email': data['client']['client_contact_email'],
-    }
+    # client_info_mission = {
+    #     'Client Company Name': data['client']['client_company_name'],
+    #     'Client Phone Number': data['client']['client_phone_number'],
+    #     'Client Email': data['client']['client_contact_email'],
+    # }
 
     # Combine all extracted information for Mission 1
     mission_info = {
-        'Mission ID': mission_id,
-        'Tasks': mission_tasks,
-        'Client Info': client_info_mission,
+        # 'Mission ID': mission_id,
+        'Tasks': mission_tasks
+        # 'Client Info': client_info_mission,
     }
     # return jsonify(mission_info)
     #     # Run your optimization algorithm using the extracted data for the current mission
-    mission_route = optimize_delivery_multiple_missions(mission_tasks)  # Pass the list of stops for this mission
+    mission_route,data,google_maps_link_list = optimize_delivery_multiple_missions(mission_info)  # Pass the list of stops for this mission
     # )
 
     # optimized_routes.append(mission_route)
 
     # # Return the optimization results for all missions as a JSON response
-    return jsonify(mission_route,mission_info), 200
+    return jsonify(mission_route,google_maps_link_list,data), 200
 
 if __name__ == '__main__':
     app.run(debug=True)
