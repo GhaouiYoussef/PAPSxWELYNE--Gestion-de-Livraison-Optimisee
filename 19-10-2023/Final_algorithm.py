@@ -1,39 +1,59 @@
-from Main_functions  import seconds_to_hms  ,split_route,get_route_distances    ,generate_google_maps_link  ,calculate_total_distance   ,choose_starting_point
+from Main_functions  import seconds_to_hms  ,split_route,get_route_distances    ,generate_google_maps_link  ,calculate_total_distance   ,choose_starting_point,         combine_consecutive_occurrences
 
 from Tsp_modified import tsp , create_order_constraint
 
 
 
-def optimize_delivery_multiple_missions(mission_tasks, GOOGLE_MAPS_API_KEY='AIzaSyAgaRnl5RlSg1bX79_CH3E3xchf_bgA6Gw',):#AIzaSyAgaRnl5RlSg1bX79_CH3E3xchf_bgA6Gw
+def optimize_delivery_multiple_missions(mission_info, GOOGLE_MAPS_API_KEY='AIzaSyAgaRnl5RlSg1bX79_CH3E3xchf_bgA6Gw',):#AIzaSyAgaRnl5RlSg1bX79_CH3E3xchf_bgA6Gw
 
     results = []
     Pickup_locations=[]
     Pick_hub_index=[]
     Delivery_locations=[]
     Hub_locations=[]
-    google_maps_link_list = []
 
+    Data_return=[]
 
-    for task in mission_tasks:
+    for i,task in enumerate (mission_info['Tasks']):
         Pickup_locations.append(task['Pickup Address'])
+        Data_return.append(
+            {
+                "uid" : task['uid'],
+                "Taks ID"   : task['Task ID'],
+                "location"  : Pickup_locations[-1],
+                "action"  : "Pickup"
+            }
+        )
+
+#add to the list of dictionnaries {Mission ID,Taks ID, location , type }
+    for i,task in enumerate (mission_info['Tasks']):
+        Delivery_locations.append(task['Delivery Address'])
+        Data_return.append(
+                {
+                "uid" : task['uid'],
+                "Taks ID"   : task['Task ID'],
+                "location"  : Delivery_locations[-1],
+                "action"  : "Delivery"
+            }
+        )
+
+    for i,task in enumerate (mission_info['Tasks']):       
         if task['Pickup Hub Name']!=None:
             Pick_hub_index.append(len(Pickup_locations)-1) # index of the pickup location that has a hub
             # print(f'Pick_hub_index: {Pick_hub_index} \n')
 
             Hub_locations.append(task['Pickup Hub Name']+','+task['Pickup Hub City'])
-        Delivery_locations.append(task['Delivery Address'])
+
+            Data_return.append(
+            {
+                "uid" : task['uid'],
+                "Taks ID"   : task['Task ID'],
+                "location"  : Hub_locations[-1],
+                "action"  : "Passage par Entropot"
+            }
+        )
         
-    print(f'Pickup_locations: {Pickup_locations} \n')
-    print(f'Delivery_locations: {Delivery_locations} \n')
-    print(f'Hub_locations: {Hub_locations} \n')
-
-
-    #-------------------------------------------------------------------------------------------------------------
-    # Pickup_locations=list(set(Pickup_locations))
-    # Delivery_locations=list(set(Delivery_locations))
-    # for locations in [Pickup_locations, Delivery_locations]:
-    # we are going to make two loops one for pickup and one for delivery
-    #-------------------------------------------------------------------------------------------------------------
+    
 
 
 
@@ -49,15 +69,15 @@ def optimize_delivery_multiple_missions(mission_tasks, GOOGLE_MAPS_API_KEY='AIza
 
     
     # A visual explination -------------------------------------------------------------------------------------------------------------
-    locations_abstract = [f"p{i}" for i in range(   (len(Pickup_locations)+len(Delivery_locations)) //2)] + [f"d{i}" for i in range((len(Pickup_locations)+len(Delivery_locations))//2)]
-    for i, index in enumerate(Pick_hub_index):
-        locations_abstract.append(f"e{index}")  
+    # locations_abstract = [f"p{i}" for i in range(   (len(Pickup_locations)+len(Delivery_locations)) //2)] + [f"d{i}" for i in range((len(Pickup_locations)+len(Delivery_locations))//2)]
+    # for i, index in enumerate(Pick_hub_index):
+    #     locations_abstract.append(f"e{index}")  
     #-------------------------------------------------------------------------------------------------------------
 
     # Résoudre le problème du voyageur de commerce (TSP) avec des véhicules
     start_location= choose_starting_point(distance_matrix[:len(Pickup_locations)])
 
-    routes = tsp(distance_matrix,start_location,order_constraint,      Pick_hub_index,3 ,locations_abstract)#default value  
+    routes = tsp(distance_matrix,start_location,order_constraint,      Pick_hub_index,3 )#default value  
     # print(f'route: {routes} \n')
 
     '''
@@ -71,14 +91,8 @@ def optimize_delivery_multiple_missions(mission_tasks, GOOGLE_MAPS_API_KEY='AIza
         total_distance= calculate_total_distance(distance_matrix, routes)
         
 
-        print(f'locations_abstract: {locations_abstract} \n')
-
-
-
-
-
-        route_names = [locations_abstract[loc_idx] for loc_idx in routes]
-        print(f'route_names: {route_names} \n')
+        Data = [Data_return[loc_idx] for loc_idx in routes]
+        # print(f'route_names: {route_names} \n')
 
         #-------------------------------------------------------------------------------------------------------------
         #set the corresponding locations to the routes
@@ -91,10 +105,18 @@ def optimize_delivery_multiple_missions(mission_tasks, GOOGLE_MAPS_API_KEY='AIza
 
 
         #gey the google maps link for the route
-        google_maps_link = generate_google_maps_link(route_names)
-        google_maps_link_list.append(google_maps_link)
+        if len(route_names)>25:#on the assumtion that we will never need more than 50 locations, but that case we just use %len(route_names)
+                google_maps_link_list = {}
+                google_maps_link_list['Etape 1'] = generate_google_maps_link(route_names[:len(route_names)])
+                google_maps_link_list['Etape 2'] = generate_google_maps_link(route_names[len(route_names):])
 
-        result += f"Optimal route : {' --> '.join(route_names)} <br>"
+                # google_maps_link_list.append(google_maps_link)
+        else:
+            google_maps_link_list = []
+            google_maps_link = generate_google_maps_link(route_names)
+            google_maps_link_list.append(google_maps_link)
+        final_route_name=combine_consecutive_occurrences(route_names)
+        result += f"Optimal route : {' --> '.join(final_route_name)} <br>"
         result += f"Total distance : {total_distance:.2f} kilometers <br> <br>"
 
     else:
@@ -102,4 +124,4 @@ def optimize_delivery_multiple_missions(mission_tasks, GOOGLE_MAPS_API_KEY='AIza
 
     results.append(result)
         
-    return results,google_maps_link_list
+    return results,Data,google_maps_link_list
