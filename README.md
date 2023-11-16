@@ -55,6 +55,17 @@ N'oubliez pas que vous devrez également obtenir des clés d'API si vous utilise
 
 Si vous souhaitez tester l'API en local, vous pouvez utiliser des outils comme Postman pour envoyer des demandes POST aux points d'extrémité appropriés. Des exemples de données de missions sont fournis dans le fichier `missions.js`.
 
+## Output
+
+Il se compose de 3 elements:
+1. Un message decrivant le road map et la distance approximative
+2. Un lien Googlemaps de la roadmap (2 liens si on dispose de plus que 25 localisation)
+3. Les donnees ordonnes ,correspondant a la raodmap:
+     - uid : Mission ID
+     - Taks ID
+     - action : {'Pickup','Passage par Entropot','Delivery'}
+     - localion : localisation l'action faite pour cette tache
+
 ## À Propos du Projet
 
 Ce projet vise à fournir une solution efficace pour la gestion de la livraison de marchandises en optimisant les itinéraires. Il utilise des algorithmes avancés pour s'assurer que les missions sont accomplies de la manière la plus efficace possible.
